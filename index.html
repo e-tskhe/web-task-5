@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор стоимости заказа</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="calculate.js" defer></script>
+</head>
+<body>
+    
+    <header><h1>Расчет стоимости заказа</h1></header>
+
+    <fieldset>
+        <legend>Введите данные</legend>
+
+        <div>
+            <label for="quantity">Количество товаров</label>
+            <input type="text" id="quantity" value="" placeholder="Введите число">
+        </div>
+
+        <div>
+            <label for="goods">Тип товара</label>
+            <select id="goods">
+                <option value="anker">Anker Soundcore Liberty 3 Pro</option>
+                <option value="apple">Apple AirPods Pro 2</option>
+                <option value="huawei">Huawei Freebuds 5i</option>
+                <option value="samsung">Samsung  Galaxy Buds 3 Pro</option>
+                <option value="marshall">Marshall Major IV</option>
+                <option value="honor">Honor Choice Earbuds X5 Pro</option>
+                <option value="sony">Sony WH-1000XM4</option>
+                <option value="akg">AKG K72</option>
+            </select>
+        </div>
+
+    </fieldset>
+
+    <button id="count" onclick="calculate();">Рассчитать</button>
+    <p id="result">Стоимость заказа: </p>
+    
+
+</body>
+</html>
